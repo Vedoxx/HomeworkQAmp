@@ -13,30 +13,21 @@ public class taskThree {
                 if(B==0)
                 {
                     System.out.println("Undefined");
-                    System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                    System.out.print("Answer:");
-                    answer=object.next().charAt(0);
                 }
                 else if (A%B==0){
                     System.out.println("A is divisible with number B");
-                    System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                    System.out.print("Answer:");
-                    answer=object.next().charAt(0);
                 }
                 else if(A%B!=0)
                 {
                     System.out.println("A is not divisible with number B");
-                    System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                    System.out.print("Answer:");
-                    answer=object.next().charAt(0);
                 }
             }
             else{
                 System.out.println("A is not valid");
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer=object.next().charAt(0);
             }
+            System.out.println("Would you like to start again (Y-yes)(N-no)?");
+            System.out.print("Answer:");
+            answer=object.next().charAt(0);
 
         }while((answer=='Y')||(answer=='y'));
     }
