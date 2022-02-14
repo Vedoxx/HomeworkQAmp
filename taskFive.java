@@ -9,20 +9,22 @@ import java.util.Scanner;
         do {
             System.out.print("Type the value of x:");
             int x = object.nextInt();
-            int result = x + x + 6 / (2 - x);
-            System.out.print("Result:");
-            System.out.println(result);
-            if (result % 2 == 0) {
-                System.out.println("Result is divisible by 2");
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer = object.next().charAt(0);
-            } else {
-                System.out.println("Result is not divisible by 2");
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer = object.next().charAt(0);
+            if(x==2){
+                System.out.println("Undefined");
             }
+            else {
+                int result = x + x + 6 / (2 - x);
+                System.out.print("Result:");
+                System.out.println(result);
+                if (result % 2 == 0) {
+                    System.out.println("Result is divisible by 2");
+                } else {
+                    System.out.println("Result is not divisible by 2");
+                }
+            }
+            System.out.println("Would you like to start again (Y-yes)(N-no)?");
+            System.out.print("Answer:");
+            answer = object.next().charAt(0);
         }while((answer=='Y')||(answer=='y'));
     }
 }
