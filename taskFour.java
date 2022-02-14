@@ -12,22 +12,16 @@ public class taskFour {
             if (A > B) {
                 float C = A + B;
                 System.out.println("Result is:" + C);
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer = object.next().charAt(0);
             } else if (B > A) {
                 float C = B - A;
                 System.out.println("Result is:" + C);
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer = object.next().charAt(0);
             } else {
                 float C = A * B;
                 System.out.println("Result is:" + C);
-                System.out.println("Would you like to start again (Y-yes)(N-no)?");
-                System.out.print("Answer:");
-                answer = object.next().charAt(0);
             }
+            System.out.println("Would you like to start again (Y-yes)(N-no)?");
+            System.out.print("Answer:");
+            answer = object.next().charAt(0);
         } while ((answer == 'Y') || (answer == 'y'));
     }
 }
